@@ -60,7 +60,7 @@ app.get('/map', (req, resp) => {
         center: `${coord.lat},${coord.lon}`,
         size: '300x300',
         zoom: 10,
-        marker: `size:mid|color:blue|label:A|${coord.lat},${coord.lon}`
+        markers: `size:mid|color:red|label:A|${coord.lat},${coord.lon}`
     }
 
     getMap({ qs: params, encoding: null})
