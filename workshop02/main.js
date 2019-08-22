@@ -84,7 +84,7 @@ app.get(
 			.then(result => {
 				
 				resp.type('application/json');
-				if(result.lengths > 0)
+				if(result.length > 0)
 				{
 					resp.status(200);
 					resp.json(result[0]);
@@ -104,7 +104,29 @@ app.get(
 )
 
 // TODO POST /api/city
+app.post(
+	'/api/city',
+	(req,resp) => {
+		const data = req.body;
+		console.info('>>data: ', data);
+		
+		db.insertCity(data)
+			.then(result => {
+				resp.status(201);
+				resp.type('application/json');
+				resp.json({message: 'added'});
+			})
+			.catch(error => {
+				resp.status(400);
+				resp.type('text/plain');
+				resp.send(error);
+			})
 
+		resp.status(201)
+		resp.type('application/json')
+		resp.json({message: 'added'});
+	}
+)
 
 
 // Optional workshop
