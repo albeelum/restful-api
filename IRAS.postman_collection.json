@@ -1,0 +1,4044 @@
+{
+	"info": {
+		"_postman_id": "1ceeeb5f-7908-4ba1-836a-3328b681636c",
+		"name": "IRAS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4782866",
+		"_collection_link": "https://winter-eclipse-207247.postman.co/workspace/api~0053806c-b495-407e-94b7-aebaf622a9b8/collection/4782866-1ceeeb5f-7908-4ba1-836a-3328b681636c?action=share&creator=4782866&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "https://apisandbox.iras.gov.sg/iras/sb/payment/makePayment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "32e32304-a7d6-4a43-a321-bbf71892e69e",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "qI7qY4sB3lG0fR5aY1xP2wY1vV4mG2sL7qO4cN4mJ5lI8vI0sD",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "accesstoken",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Il9SQzZ4d09NdmJ0dDZhald1WmU2R2xncy1qM3dtNXJpQXlDVW9SYXNhLUkifQ.eyJzdWIiOiJTNjAwNTAzN0YiLCJqdGkiOiJ0Q0pLX3BtYzBFNTAtT2t3QTJLLWluN2NkblFXenhKRXBnb010eE1BIiwic2NvcGUiOlsiQ2hlY2tUYXhJbmZvIl0sInRva2VuTmFtZSI6ImFjY2Vzc190b2tlbiIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJncmFudF90eXBlIjoiYXV0aG9yaXphdGlvbl9jb2RlIiwiZXhwaXJlc19pbiI6MTgwMCwiYXVkIjoiU1RHLVNBLUlSQVMtU1AiLCJyZWFsbSI6ImlyYXMtc3AiLCJpc3MiOiJodHRwczovL3Rlc3QuYXBpLm15aW5mby5nb3Yuc2cvc2VydmljZWF1dGgvaXJhcy1zcCIsImlhdCI6MTYxMTQ1ODk0MSwibmJmIjoxNjExNDU4OTQxLCJleHAiOjE2MTE0NjA3NDF9.L3stsQvXf6scuf5pvh1nCHYchaKro8I92obgRm5XU0jBmVtw71tZ6a300kn_XINK8KpzMTKpeWGAEmTl-AUtR2ljD60n0SBehK7oEOtVxltmxUTlUm2W0JwK-wh6AWHy5yM4buU19t6rtmrAXHvJklqtMJIhKD8BxPt08mG3gF4sT9jFohMo0BFLOejfTuCV_HpqNVGUBoTCvOVYH3x2haiF63htdAKpohWLAtsmrIKR34dXjoEZim1BawqGn3pJzJKU28kgyY8Hb_cmUN-BAH1N_3GGBrl6ioluVO22-eGg9a-poAfI48lp4r0HcVy5xw-Oz1I4DEcamQe1Su3JyQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"TaxRefNo\": \"\",\r\n \"TaxType\": \"IIT\",\r\n \"PymtMode\": \"2\"\r\n}"
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/payment/makePayment",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"payment",
+						"makePayment"
+					]
+				},
+				"description": "IRAS"
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "594a56795c1661a5447e2044192ed3d3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "ee71720edf813b64b5faedcb5d27ef10",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&callback_url=https://forms.smartsource.com.sg/SandboxIrasApi&state=test&tax_agent=false",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "DonationSub"
+						},
+						{
+							"key": "callback_url",
+							"value": "https://forms.smartsource.com.sg/SandboxIrasApi"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate - TLS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "594a56795c1661a5447e2044192ed3d3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "ee71720edf813b64b5faedcb5d27ef10",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&callback_url=https://forms.smartsource.com.sg/SandboxIrasApi&state=test&tax_agent=false",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "DonationSub"
+						},
+						{
+							"key": "callback_url",
+							"value": "https://forms.smartsource.com.sg/SandboxIrasApi"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IBM",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "4d236137-8505-454a-9a34-cdd0a7e8171f",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "hW7hR3bM3lL5qN2jI0rD1cT8uN7sL7bI4kU5uO5vQ8eK4kD7gD",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 9ubmVjdCIsImV4cCI6MTY3Nzc5MTM2OCwiaWF0IjoxNjc3NzYyNTY4LCJncmFudF90eXBlIjoicGFzc3dvcmQiLCJ1c2VyX3JlZ2lzdHJ5X3VybCI6Ii9hcGkvdXNlci1yZWdpc3RyaWVzLzZmYzhkZGJlLTAwYzUtNGQ1YS05OTZiLWQ4M2QwM2Q0MDIwYS9kZDAyZGE0ZC1hYTc0LTRkN2MtODc4ZC0xYmQwMjkwOWVjOGUiLCJyZWFsbSI6InByb3ZpZGVyL2RlZmF1bHQtaWRwLTIiLCJ1c2VybmFtZSI6ImFwaV9zdXBwb3J0QGlyYXMuZ292LnNnIiwiaWRfdG9rZW4iOiJleUpoYkdjaU9pSlNVekkxTmlJc0luUjVjQ0k2SWtwWFZDSXNJbXRwWkNJNklrUTBNall6T0RZMFJUazJOVE15TnpaRlJVRXdSVVF4UVRNM056Y3dRMFk0UVRJeE16TXlSVEVpZlEuZXlKbWFYSnpkRjl1WVcxbElqb2lTVkpCVXlJc0lteGhjM1JmYm1GdFpTSTZJbE4xY0hCdmNuUWlMQ0oxYzJWeWJtRnRaU0k2SW1Gd2FWOXpkWEJ3YjNKMFFHbHlZWE11WjI5MkxuTm5JaXdpWlcxaGFXd2lPaUpoY0dsZmMzVndjRzl5ZEVCcGNtRnpMbWR2ZGk1elp5SXNJbWxoZENJNk1UWTNOemMyTWpVMk9IMC5aX3pwTUdzUUMzYjFia0NxX0lwcm1COTJSQlF5SlVBazVQaXI5YlA3dU02emhMNTJpTktlaDhoTlpxSFFxaEpGdkRDUWVNUXA3cWpNN3ZhNXVmeFdQLVpUUGxFVkFYUFczWTZPV1hXX2VoMkptbTJ4QW8zV1IxUFVwMXZTMGJUeWtFZDVPNUh1cXZzak5Hb2JNVHA3ZksyelluZmFhUHpqRTIwTmVZdmpEaWNGRHdFcnpYTExNcDl3ZlhzV29qbU93SG9QN2ZtT2s1eDZ0RDU4blRoRnh2bFJhcENjQW5qQUctdnFrTjFTdFBYMTA2ZUw2YXdJTk00Sm9xNG1NTmNobl9LS05vWlhWZkdTR2pnLWJlUnBqcmxSNHRpa0ZlanlfSldpQTVnRDVlVFpJam5BUjUwQlpGV0lvdkZyalZtU3NKV3prM1FQMVVZUmlaVVNvNGE3RUEiLCJzY29wZXMiOlsiY2xvdWQ6dmlldyIsImNsb3VkOm1hbmFnZSIsInByb3ZpZGVyLW9yZzp2aWV3IiwicHJvdmlkZXItb3JnOm1hbmFnZSIsIm9yZzp2aWV3Iiwib3JnOm1hbmFnZSIsInByb2R1Y3QtZHJhZnRzOnZpZXciLCJwcm9kdWN0LWRyYWZ0czplZGl0IiwiYXBpLWRyYWZ0czp2aWV3IiwiYXBpLWRyYWZ0czplZGl0IiwiY2hpbGQ6dmlldyIsImNoaWxkOmNyZWF0ZSIsImNoaWxkOm1hbmFnZSIsInByb2R1Y3Q6dmlldyIsInByb2R1Y3Q6c3RhZ2UiLCJwcm9kdWN0Om1hbmFnZSIsImFwcHJvdmFsOnZpZXciLCJhcHByb3ZhbDptYW5hZ2UiLCJhcGktYW5hbHl0aWNzOnZpZXciLCJhcGktYW5hbHl0aWNzOm1hbmFnZSIsImNvbnN1bWVyLW9yZzp2aWV3IiwiY29uc3VtZXItb3JnOm1hbmFnZSIsImFwcDp2aWV3OmFsbCIsImFwcDptYW5hZ2U6YWxsIiwibXk6dmlldyIsIm15Om1hbmFnZSIsIndlYmhvb2s6dmlldyJdfQ.VYY_viQqdJXqGe1ti67QL8hYmVNulmOUkPji1gb6sFDsa_3br5_b-nOJn3yp1FZHs-SzQWzAsi6jdje3HbOUEpy0QFAsdhv_9ywgfDO2HffWiW0UhHjRkhw4BAkW64XfWtIlR6-9OSI3Zh1n4tkTuXUY4DL2qNB2IQDP8lLfiUscCyO344DhV3GjRuz0MO2gDhKfiOybe4cHp_IFKiVE1Aiw_GfjxwjFUKYqTP-tp-cTN2FhA4s7GCjviSjJdR85C7hY476L2yEEKETuGaMKw1cLJsv35StE6Vi0lOI4yWNMa00i2XLcV0-rggc71XxE2VmXqkf_l4pxwY3DAjlZPg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apim.pivwais110p.irastbp.gov.sg/analytics/catalogs/iras/prod/analytics-services/prod-analytic-server/events?page_after='1672986199958%3A%3A%3Aapievent%23AYWFv4sdzsl8cMdolZyA'&size=10000",
+					"protocol": "https",
+					"host": [
+						"apim",
+						"pivwais110p",
+						"irastbp",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"analytics",
+						"catalogs",
+						"iras",
+						"prod",
+						"analytics-services",
+						"prod-analytic-server",
+						"events"
+					],
+					"query": [
+						{
+							"key": "page_after",
+							"value": "'1672986199958%3A%3A%3Aapievent%23AYWFv4sdzsl8cMdolZyA'"
+						},
+						{
+							"key": "size",
+							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate - AGD",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "594a56795c1661a5447e2044192ed3d3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "ee71720edf813b64b5faedcb5d27ef10",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "o\thttps://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&callback_url=https://forms.smartsource.com.sg/SandboxIrasApi&state=test&tax_agent=false",
+					"protocol": "o\thttps",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "DonationSub"
+						},
+						{
+							"key": "callback_url",
+							"value": "https://forms.smartsource.com.sg/SandboxIrasApi"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate - TLS1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "b70fedc8-e95a-49a2-a83e-642dca8644f6",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "D0dQ3hP3cS2gQ0tN4rA6jV4iU8kD6oF2nT8uT2kB7uF8uK3fF8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=GSTF5F8SubCP&callback_url=https://staging.abssconnect.com/integrated_apps/callback/iras&state=B2E7A477A-A813-7B3s9-199E-7F64FBBA97A6&tax_agent=false",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "GSTF5F8SubCP"
+						},
+						{
+							"key": "callback_url",
+							"value": "https://staging.abssconnect.com/integrated_apps/callback/iras"
+						},
+						{
+							"key": "state",
+							"value": "B2E7A477A-A813-7B3s9-199E-7F64FBBA97A6"
+						},
+						{
+							"key": "tax_agent",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate -GSTDF5F8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "27f33c72569fc7b51068543494ebba36",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "4cb67cef54e7a8cf151ab82d3e051d03",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apiservices.iras.gov.sg/iras/prod/Authentication/CorpPassAuth?scope=EmpIncomeSub&callback_url=http://rghcm.ramatex.com.sg/rvw/IRAS.aspx&state=E710A464-B4C3-4AED-8B5B-B139F39EDEB4&tax_agent=false",
+					"protocol": "https",
+					"host": [
+						"apiservices",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"prod",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "EmpIncomeSub"
+						},
+						{
+							"key": "callback_url",
+							"value": "http://rghcm.ramatex.com.sg/rvw/IRAS.aspx"
+						},
+						{
+							"key": "state",
+							"value": "E710A464-B4C3-4AED-8B5B-B139F39EDEB4"
+						},
+						{
+							"key": "tax_agent",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate Copy 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "c53b5e9b-f595-4e20-bcb6-ed4137b3f6cb",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "7ee20527b57a6fa426a53337d6cba9b5",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=GSTF5F8SubCP&callback_url=https://staging.abssconnect.com/integrated_apps/callback/iras&state=test&tax_agent=true",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "GSTF5F8SubCP"
+						},
+						{
+							"key": "callback_url",
+							"value": "https://staging.abssconnect.com/integrated_apps/callback/iras"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate-BEN",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "cc59c6ea97b1862a24e00e5a6b193e53",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "546d96030dc155de6a3db2814a58dfbe",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=EmpIncomeSub&callback_url=https://hwweb.hockhuagroup.com.sg/hr/iras.aspx&state=SD&tax_agent=false",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "EmpIncomeSub"
+						},
+						{
+							"key": "callback_url",
+							"value": "https://hwweb.hockhuagroup.com.sg/hr/iras.aspx"
+						},
+						{
+							"key": "state",
+							"value": "SD"
+						},
+						{
+							"key": "tax_agent",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate Centrix",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "6f8f6161-cfb8-4d34-97a2-3e11250a4967",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "hN3hU4oV1nP5eR8tF2aM3iJ4oN0dB4yE8aG8kB1uG8wG7kX0sU",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=EmpIncomeSub&state=test&tax_agent=true&callback_url=https://software.ready-pay.net/IRASAPI/ReadyPay.Net/Callback.aspx",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "EmpIncomeSub"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "true"
+						},
+						{
+							"key": "callback_url",
+							"value": "https://software.ready-pay.net/IRASAPI/ReadyPay.Net/Callback.aspx"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate Avelogic",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "6f8f6161-cfb8-4d34-97a2-3e11250a4967",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "hN3hU4oV1nP5eR8tF2aM3iJ4oN0dB4yE8aG8kB1uG8wG7kX0sU",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://test.api.myinfo.gov.sg/serviceauth/iras-cp/v1/authorise?appName=SmartHRMS-IR21&client_id=STG-SA-IRAS-CP&esrvcID=E-IRIN-CP&purpose=form%20filling.&redirect_uri=https%3A%2F%2Fwww.smarthrms.com%2Fsmarthrms%2Firas_ir21_corppass_sandbox.aspx&response_type=code&scope=IITFormIR21Sub&state=mabd0rffn5kyqamiub3rriy5",
+					"protocol": "https",
+					"host": [
+						"test",
+						"api",
+						"myinfo",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"serviceauth",
+						"iras-cp",
+						"v1",
+						"authorise"
+					],
+					"query": [
+						{
+							"key": "appName",
+							"value": "SmartHRMS-IR21"
+						},
+						{
+							"key": "client_id",
+							"value": "STG-SA-IRAS-CP"
+						},
+						{
+							"key": "esrvcID",
+							"value": "E-IRIN-CP"
+						},
+						{
+							"key": "purpose",
+							"value": "form%20filling."
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https%3A%2F%2Fwww.smarthrms.com%2Fsmarthrms%2Firas_ir21_corppass_sandbox.aspx"
+						},
+						{
+							"key": "response_type",
+							"value": "code"
+						},
+						{
+							"key": "scope",
+							"value": "IITFormIR21Sub"
+						},
+						{
+							"key": "state",
+							"value": "mabd0rffn5kyqamiub3rriy5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate -1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "77cad5eb37ef8d6b88042a3b345954e9",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "e7a132e904e3c3e7d9168d2573b6f568",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=GSTF5F8SubCP&state=123412&tax_agent=false&callback_url=https://staging.infotech-accounting.com/reports/tax/gstf5returnscallback",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "GSTF5F8SubCP"
+						},
+						{
+							"key": "state",
+							"value": "123412"
+						},
+						{
+							"key": "tax_agent",
+							"value": "false"
+						},
+						{
+							"key": "callback_url",
+							"value": "https://staging.infotech-accounting.com/reports/tax/gstf5returnscallback"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate-IR8A",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "efc405a7-0c9c-44c4-b31c-86b2587a2714",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "R3vP2cF7vL0cP4gQ6hC7oA0rW8rX4wP4jM2xK8qR4tW1lX1xC8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apiservices.iras.gov.sg/iras/prod/Authentication/CorpPassAuth?tax_agent=false&state=test&scope=CommissionSub&callback_url=https://backoffice.uobkayhian.com/FIN/SubmissionOfCommissionRecordToIRAS",
+					"protocol": "https",
+					"host": [
+						"apiservices",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"prod",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "tax_agent",
+							"value": "false"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "scope",
+							"value": "CommissionSub"
+						},
+						{
+							"key": "callback_url",
+							"value": "https://backoffice.uobkayhian.com/FIN/SubmissionOfCommissionRecordToIRAS"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "B7pN4yM0lR3jC2jG8lM7rI7aD7pF1bI8fW5qB2hI5dM0kL8hQ8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&state=test&tax_agent=true&callback_url=https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "DonationSub"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "true"
+						},
+						{
+							"key": "callback_url",
+							"value": "https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CalPptyTaxByAV",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "B7pN4yM0lR3jC2jG8lM7rI7aD7pF1bI8fW5qB2hI5dM0kL8hQ8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&state=test&tax_agent=true&callback_url=https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "DonationSub"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "true"
+						},
+						{
+							"key": "callback_url",
+							"value": "https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CalPptyTaxByAV",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-ibm-client-id",
+								"value": "a9169287-5aa4-4d52-8bfa-4d56c4cfeeb5",
+								"type": "text"
+							},
+							{
+								"key": "x-ibm-client-secret",
+								"value": "jT0lP2lM1eI3rO8tK4kQ4jG7jR7mX4xM8yQ4bF8mO4bT6nP8mA",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"annualValue\":\"20000.00\",\"propertyClass\":\"1\",\"occpyStatus\":\"1\",\"periodFrm\":\"2018-01-01\",\"periodTo\":\"2018-12-31\"}"
+						},
+						"url": {
+							"raw": "https://apisandbox.iras.gov.sg/iras/sb/PTTaxCalc/CalPptyTaxByAV",
+							"protocol": "https",
+							"host": [
+								"apisandbox",
+								"iras",
+								"gov",
+								"sg"
+							],
+							"path": [
+								"iras",
+								"sb",
+								"PTTaxCalc",
+								"CalPptyTaxByAV"
+							],
+							"query": [
+								{
+									"key": "scope",
+									"value": "DonationSub",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "test",
+									"disabled": true
+								},
+								{
+									"key": "tax_agent",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "callback_url",
+									"value": "https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "4cd86af862ceb98a062ec221"
+						},
+						{
+							"key": "Accept",
+							"value": "application/json"
+						},
+						{
+							"key": "Postman-Token",
+							"value": "36d6f055-b8fd-452d-bf56-cc9df219dbbc"
+						},
+						{
+							"key": "True-Client-IP",
+							"value": "118.189.100.254"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-EdgeConnect-Session-Id",
+							"value": "83503217-62ceb98a-b26d5"
+						},
+						{
+							"key": "X-Akamai-CONFIG-LOG-DETAIL",
+							"value": "true"
+						},
+						{
+							"key": "Akamai-Origin-Hop",
+							"value": "2"
+						},
+						{
+							"key": "X-Forwarded-For",
+							"value": "118.189.100.254, 124.155.222.173"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, max-age=0"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Host",
+							"value": "apisandbox.iras.gov.sg"
+						},
+						{
+							"key": "Content-Length",
+							"value": "159"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Jul 2022 12:24:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"returnCode\": \"10\",\n    \"info\": {\n        \"fieldInfoList\": {\n            \"fieldInfo\": []\n        }\n    },\n    \"data\": {\n        \"periodFrm\": \"2018-01-01T00:00:00\",\n        \"periodTo\": \"2018-12-31T00:00:00\",\n        \"netTaxPayable\": \"480\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "SearchGSTRegister",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "B7pN4yM0lR3jC2jG8lM7rI7aD7pF1bI8fW5qB2hI5dM0kL8hQ8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\nclientID:\"3680003998875648\"\r\nregID:\"2530846120607744\"\r\n}"
+				},
+				"url": {
+					"raw": "https://apiservices.iras.gov.sg/iras/prod/GSTListing/SearchGSTRegistered",
+					"protocol": "https",
+					"host": [
+						"apiservices",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"prod",
+						"GSTListing",
+						"SearchGSTRegistered"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CalPptyTaxByAV",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-ibm-client-id",
+								"value": "a9169287-5aa4-4d52-8bfa-4d56c4cfeeb5",
+								"type": "text"
+							},
+							{
+								"key": "x-ibm-client-secret",
+								"value": "jT0lP2lM1eI3rO8tK4kQ4jG7jR7mX4xM8yQ4bF8mO4bT6nP8mA",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"annualValue\":\"20000.00\",\"propertyClass\":\"1\",\"occpyStatus\":\"1\",\"periodFrm\":\"2018-01-01\",\"periodTo\":\"2018-12-31\"}"
+						},
+						"url": {
+							"raw": "https://apisandbox.iras.gov.sg/iras/sb/PTTaxCalc/CalPptyTaxByAV",
+							"protocol": "https",
+							"host": [
+								"apisandbox",
+								"iras",
+								"gov",
+								"sg"
+							],
+							"path": [
+								"iras",
+								"sb",
+								"PTTaxCalc",
+								"CalPptyTaxByAV"
+							],
+							"query": [
+								{
+									"key": "scope",
+									"value": "DonationSub",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "test",
+									"disabled": true
+								},
+								{
+									"key": "tax_agent",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "callback_url",
+									"value": "https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "4cd86af862ceb98a062ec221"
+						},
+						{
+							"key": "Accept",
+							"value": "application/json"
+						},
+						{
+							"key": "Postman-Token",
+							"value": "36d6f055-b8fd-452d-bf56-cc9df219dbbc"
+						},
+						{
+							"key": "True-Client-IP",
+							"value": "118.189.100.254"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-EdgeConnect-Session-Id",
+							"value": "83503217-62ceb98a-b26d5"
+						},
+						{
+							"key": "X-Akamai-CONFIG-LOG-DETAIL",
+							"value": "true"
+						},
+						{
+							"key": "Akamai-Origin-Hop",
+							"value": "2"
+						},
+						{
+							"key": "X-Forwarded-For",
+							"value": "118.189.100.254, 124.155.222.173"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, max-age=0"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Host",
+							"value": "apisandbox.iras.gov.sg"
+						},
+						{
+							"key": "Content-Length",
+							"value": "159"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Jul 2022 12:24:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"returnCode\": \"10\",\n    \"info\": {\n        \"fieldInfoList\": {\n            \"fieldInfo\": []\n        }\n    },\n    \"data\": {\n        \"periodFrm\": \"2018-01-01T00:00:00\",\n        \"periodTo\": \"2018-12-31T00:00:00\",\n        \"netTaxPayable\": \"480\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "#01.CorpPassAuthenticate-AIS-corp",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "9eb454f3-5e53-4c7b-89ef-94aef8d25f93",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "B1uV1jK6hL1eF1pH3uK6dR1dX7wG2oM4hH7sR2oC3tL1bK4wF2",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=EmpIncomeSub&callback_url=https%3A%2F%2Fstaging.info-tech.com.sg%2FEpayroll%2FfrmIncomeTaxOnlineSubmission.aspx&state=53ae0675-42e4-4434-992e-011635a47b6d&tax_agent=false",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "EmpIncomeSub"
+						},
+						{
+							"key": "callback_url",
+							"value": "https%3A%2F%2Fstaging.info-tech.com.sg%2FEpayroll%2FfrmIncomeTaxOnlineSubmission.aspx"
+						},
+						{
+							"key": "state",
+							"value": "53ae0675-42e4-4434-992e-011635a47b6d"
+						},
+						{
+							"key": "tax_agent",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate-AIS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "B7pN4yM0lR3jC2jG8lM7rI7aD7pF1bI8fW5qB2hI5dM0kL8hQ8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=GSTF5F8SubCP&state=test&tax_agent=true&callback_url=https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "GSTF5F8SubCP"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "true"
+						},
+						{
+							"key": "callback_url",
+							"value": "https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate-singpass",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "B7pN4yM0lR3jC2jG8lM7rI7aD7pF1bI8fW5qB2hI5dM0kL8hQ8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&state=test&tax_agent=true&callback_url=https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "DonationSub"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "true"
+						},
+						{
+							"key": "callback_url",
+							"value": "https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate-singpass Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "B7pN4yM0lR3jC2jG8lM7rI7aD7pF1bI8fW5qB2hI5dM0kL8hQ8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&state=test&tax_agent=true&callback_url=https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "DonationSub"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "true"
+						},
+						{
+							"key": "callback_url",
+							"value": "https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate-singpass Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "B7pN4yM0lR3jC2jG8lM7rI7aD7pF1bI8fW5qB2hI5dM0kL8hQ8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&state=test&tax_agent=true&callback_url=https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "DonationSub"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "true"
+						},
+						{
+							"key": "callback_url",
+							"value": "https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate-Donation",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "B7pN4yM0lR3jC2jG8lM7rI7aD7pF1bI8fW5qB2hI5dM0kL8hQ8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&state=test&tax_agent=true&callback_url=https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "DonationSub"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "true"
+						},
+						{
+							"key": "callback_url",
+							"value": "https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate-Donation Latest",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "B7pN4yM0lR3jC2jG8lM7rI7aD7pF1bI8fW5qB2hI5dM0kL8hQ8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&state=test&tax_agent=true&callback_url=https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "DonationSub"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "true"
+						},
+						{
+							"key": "callback_url",
+							"value": "https%3A%2F%2Fapisandbox.iras.gov.sg%2Firas%2Fdevportal%2Fsb%2Fcallbackurl"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate-Donation Abhi-Tech",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "a08eecb3-5cdd-4c46-8a80-ea0136bcb1a4",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "H1gK3wK2sF8tC3eQ2aQ8gK2tH1oL3vK7rC7xB3dR5eG0tJ0rX8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&state=390b25fa-4427-4b10-9ae2-34d6e0cd91a1&tax_agent=true&callback_url=https://domastest.abi-tech.com.sg/submitiras",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "DonationSub"
+						},
+						{
+							"key": "state",
+							"value": "390b25fa-4427-4b10-9ae2-34d6e0cd91a1"
+						},
+						{
+							"key": "tax_agent",
+							"value": "true"
+						},
+						{
+							"key": "callback_url",
+							"value": "https://domastest.abi-tech.com.sg/submitiras"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#01.CorpPassAuthenticate-Talenox",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "a08eecb3-5cdd-4c46-8a80-ea0136bcb1a4",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "H1gK3wK2sF8tC3eQ2aQ8gK2tH1oL3vK7rC7xB3dR5eG0tJ0rX8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&state=390b25fa-4427-4b10-9ae2-34d6e0cd91a1&tax_agent=true&callback_url=https://domastest.abi-tech.com.sg/submitiras",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "DonationSub"
+						},
+						{
+							"key": "state",
+							"value": "390b25fa-4427-4b10-9ae2-34d6e0cd91a1"
+						},
+						{
+							"key": "tax_agent",
+							"value": "true"
+						},
+						{
+							"key": "callback_url",
+							"value": "https://domastest.abi-tech.com.sg/submitiras"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEAB",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "134d304b262776c00ed58f210fc21e15",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "2182266321c431a07839dfac3d851c9a",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=EmpIncomeSub&callback_url=https://dev.iexams.seab.gov.sg/iexams2/login/oauth2/code/dev-iexams-iras&state=0120202&tax_agent=false",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "EmpIncomeSub"
+						},
+						{
+							"key": "callback_url",
+							"value": "https://dev.iexams.seab.gov.sg/iexams2/login/oauth2/code/dev-iexams-iras"
+						},
+						{
+							"key": "state",
+							"value": "0120202"
+						},
+						{
+							"key": "tax_agent",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prod test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "e9a0f81d-eed7-4223-b91e-155bb8117f0a",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "mQ5rL3oD6pJ5rR2bB8jL4jG2dH7fO7dF0kL0gL7dE4iF1bU7eY",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"clientID\":\"7434667363926016\",\"organizationID\":\"208000003N\",\"basisYear\":\"2018\"}"
+				},
+				"url": {
+					"raw": "https://apiservices.iras.gov.sg/iras/prod/ESubmission/CommSearch",
+					"protocol": "https",
+					"host": [
+						"apiservices",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"prod",
+						"ESubmission",
+						"CommSearch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prod test Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "c4300d48eb2d1adb98e457525b8f1a4b",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "dfa4c1bf894513b1b9100d1230d34131",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/plain",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "text/plain",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Data\":\"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUlNBMV81In0.HAGltmCxFmrSyEighc2HDg6iPn3LA1Qev5HACEYBbuSfvx3cZSMPVAH7kT0ESiv-bgm5bXImawkw1F95QlOmod98H30mwi2pPpSsz-sStvvmEfaAs5IHedoIjNqBQyFqGR6Fa4xxE34YjfV_-TxGfHE1EvHBM5mSYC3oVVKeGd0uaPddp9nXBXbIE98A0x5m3rgv9otjvZFB6koOOr80QMm9uU-tnUe2HRVuzfXh-UBvZyBnQrVEDYOsZmB_W_qChLgAsoesFaOAmbNr8xb5YKSkqvgbx43pFKtUVJ2OsYxnmv8tJwaTnWGpoR4qOa4db9q_5MtCHV5LsgwEuBvoBQ.VsRkdH4tdwuvlX4DkG6Tug.4bnS5vGexCcEcps09XWbIJUnonBYoRZzZPnlfp0ZWJA6nSQ0v_0f7xt2gsScYZNkSKZTGXD3v50zC-wLZehDECMqrB6A-a-oWYw_1yH8HMg_FsJ6euprhoKMgPCs9jRoHghr9R0g3WO4Gh6jGKr59FnZWU72oG0kNhwwoXfGF3fkz2MqmDjC7KHA_GG5nf-HFIjiWar2FhbnFGerTULeboQ0JzcDl_mjBPMjfA0j7IYvEE1ErxWxvOd92C1iKomV_DwttyODzCfN2CaxCxbFPCRRwrmc21aA555F3S3xXvCchqPhwYP96G-lsj4GTkYWa06NmcHR_p8ZFuK0prgAS_u7_C05k97MHSbWQ9Qe8TqitPLNtmVvIZ6QHRSJWS39nOdS7fQU01NdkM1JmKShXMk5t8NR8ypq0Dj4P7kascwkTeFsBlkUZvQgSSNJzRETDGFvQcC89-VkT_vac3kXTXbKVpkrd9oMo8YPuvC6YIPFn0qImDxNTcwvk0xT_dBNz6jvJ4SUS0W85OhoEYvfNz0Zor8MiKDA5_wjWjd5FB5LM98HmYX1GsEokyXpJK5TXHzZqbfmHOyhISMHEF3FeZsKw8LpGUF5vG-OpjzzxhYE2vDBWgOwt0O5FY_MxwQ0om2zNlGNOQR16g526HyvFI44ageEgtlfadmAkvmnFh2mzrNCsEMPtkPWQhO6HGpuIKKayognzJNJ9wvT-xzvrrDIQlKIYzX7N_F4sQirAB6F9fCcv3tjt2kc1jecpQyvGpj-v3Ql33Ut11uO9z_7rtldYegEErKVPm-X-btNxO0Uk-CNWJ83-2qJcpjTKkzIwvQaFvZhXvvoUZjfiIhluyUOdWb7ENLbP7ZFpiL6hvQEyiMJjTH0YMlvZStm6avOTs2bx4zW2kk8x8du06ZGfan3KV4XbUBkuzCATwSgwvXeCL8exRTsWGpkQaJrauXP6MszPrSVu95x-p2W7bmTD2o5nkEbim8NT16VNzhdB4WSsr4rkBzHm1A4huvlcTQTmT7spHpO7pFvnhxnEjlz9tZIAhprkhyHSKM8AXFdkZ-8C5YCVm3j4lsJeU6774feIdVkZyvafl2Fd4dmYLC0QENd7Q5VAVHHusdve4aPSRAtS6X0xIbcKvKpH_53BRJiDdFMLRnEqjWcUKAjlnn3H61tdlEmdl_fct0SEKUEno2hOwC-t-t0Dn5E0ZFAT38O4o2vibTA7iBW96KcUJatCA.WTUnrU3MFzXF_P78-BkhDg\"}"
+				},
+				"url": {
+					"raw": "https://pivwidp101s.irasortbp.gov.sg/iras/sb/egirocorp/creationcallback",
+					"protocol": "https",
+					"host": [
+						"pivwidp101s",
+						"irasortbp",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"egirocorp",
+						"creationcallback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "converformcs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "c53b5e9b-f595-4e20-bcb6-ed4137b3f6cb",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "7ee20527b57a6fa426a53337d6cba9b5",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"declaration\": {\r\n        \"isQualifiedToUseConvFormCS\": \"True\"\r\n        },\r\n        \"filingInfo\": {\r\n        \"ya\": \"2022\"\r\n        },\r\n        \"data\": {\r\n        \"totalRevenue\": \"20000\",\r\n        \"sgIntDisc\": \"0\",\r\n        \"oneTierTaxDividendIncome\": \"0\",\r\n        \"c1_GrossRent\": \"5000\",\r\n        \"sgOtherI\": \"0\",\r\n        \"otherNonTaxableIncome\": \"3000\",\r\n        \"totalOtherIncome\": \"8000\",\r\n        \"costOfGoodsSold\": \"49000\",\r\n        \"bankCharges\": \"1000\",\r\n        \"commissionOther\": \"1000\",\r\n        \"depreciationExpense\": \"1000\",\r\n        \"directorsFees\": \"1000\",\r\n        \"directorsRemunerationExcludingDirectorsFees\": \"50000\",\r\n        \"donations\": \"500\",\r\n        \"cpfContribution\": \"1000\",\r\n        \"c1_EntertainExp\": \"1000\",\r\n        \"commissionExpRentalIncome\": \"1000\",\r\n        \"insuranceExpRentalIncome\": \"1000\",\r\n        \"interestExpRentalIncome\": \"1000\",\r\n        \"propertyTaxExpRentalIncome\": \"1000\",\r\n        \"repairMaintenanceExpRentalIncome\": \"1000\",\r\n        \"otherExpRentalIncome\": \"1000\",\r\n        \"fixedAssetsExpdOff\": \"1000\",\r\n        \"amortisationExpense\": \"1000\",\r\n        \"insuranceExpOther\": \"1000\",\r\n        \"interestExpOther\": \"1000\",\r\n        \"impairmentLossReversalOfImpairmentLossForBadDebts\": \"1000\",\r\n        \"medicalExpIncludingMedicalInsurance\": \"600\",\r\n        \"netGainsOrLossesOnDisposalOfPPE\": \"200\",\r\n        \"netGainsOrLossesOnForex\": \"400\",\r\n        \"netGainsOrLossesOnOtherItems\": \"-100\",\r\n        \"miscExp\": \"1000\",\r\n        \"otherPrivateOrCapitalExp\": \"6000\",\r\n        \"otherFinanceCost\": \"1000\",\r\n        \"penaltiesOrFine\": \"700\",\r\n        \"professionalFees\": \"1000\",\r\n        \"propertyTaxOther\": \"1000\",\r\n        \"rentExp\": \"1000\",\r\n        \"repairMaintenanceExcludingUpkeepOfPrivateVehiclesAndExpRentalIncome\": \"1000\",\r\n        \"repairsMaintenanceForPrivateVehicles\": \"2000\",\r\n        \"salesAndMarketingExpense\": \"1000\",\r\n        \"skillsDevelopmentForeignWorkerLevy\": \"1000\",\r\n        \"staffRemunerationOtherThanDirectorsRemuneration\": \"1000\",\r\n        \"staffWelfare\": \"1000\",\r\n        \"telecommunicationOrUtilities\": \"1000\",\r\n        \"training\": \"1000\",\r\n        \"c1_TransportExp\": \"1000\",\r\n        \"upkeepNonPrivateVehicles\": \"1000\",\r\n        \"upkeepPrivateVehicles\": \"5000\",\r\n        \"profitLossBeforeTaxation\": \"-117300\",\r\n        \"c1_FurtherDed\": \"400\",\r\n        \"unutilCABFNorm\": \"10000\",\r\n        \"unutilLossBFNorm\": \"5000\",\r\n        \"unutilDonationBFNorm\": \"2000\",\r\n        \"cyDonation\": \"1250\",\r\n        \"fullTxX\": \"2\",\r\n        \"uCALDChangePrinAct\": \"2\",\r\n        \"sholderChange\": \"2\",\r\n        \"unutilCALDClaimS23S37\": \"0\",\r\n        \"expRD\": \"0\",\r\n        \"expRDSG\": \"0\",\r\n        \"enhanceDeductRD\": \"0\",\r\n        \"furtherDeductRD\": \"0\",\r\n        \"tradeReceivables\": \"55000\",\r\n        \"inventories\": \"60000\",\r\n        \"theLeaseholdImprovementsAndRenoCostDoNotRequireTheApprovalOfCOBC\": \"\",\r\n        \"firstYAInWhichS14QDeductionClaimed\": \"\",\r\n        \"leaseholdImprovementsAndRenoCostIncurredInYAMinus4\": \"0\",\r\n        \"leaseholdImprovementsAndRenoCostIncurredInYAMinus3\": \"0\",\r\n        \"leaseholdImprovementsAndRenoCostIncurredInYAMinus2\": \"0\",\r\n        \"leaseholdImprovementsAndRenoCostIncurredInYAMinus1\": \"0\",\r\n        \"leaseholdImprovementsAndRenoCostIncurredInCurrentYA\": \"0\",\r\n        \"iaAaPriorSeamlessFiling\": \"0\",\r\n        \"baPriorSeamlessFiling\": \"0\",\r\n        \"bcPriorSeamlessFiling\": \"0\"\r\n        },\r\n        \"nonHPCompCommEquipment\": [ ],\r\n        \"nonHpOtherPPE\": [ ],\r\n        \"nonHpOtherPPE_LowValueAsset\": [ ],\r\n        \"hpOtherPPE\": [ ]\r\n        }"
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/ct/convertformcs",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"ct",
+						"convertformcs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckGSTRegister",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "e9a0f81d-eed7-4223-b91e-155bb8117f0a",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "mQ5rL3oD6pJ5rR2bB8jL4jG2dH7fO7dF0kL0gL7dE4iF1bU7eY",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"regID\": \"6109DEA\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://apiservices.iras.gov.sg/iras/prod/GSTListing/SearchGSTRegistered",
+					"protocol": "https",
+					"host": [
+						"apiservices",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"prod",
+						"GSTListing",
+						"SearchGSTRegistered"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckGSTRegister-time",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "e9a0f81d-eed7-4223-b91e-155bb8117f0a",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "mQ5rL3oD6pJ5rR2bB8jL4jG2dH7fO7dF0kL0gL7dE4iF1bU7eY",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"regID\": \"197900428R\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://apiservices.iras.gov.sg/iras/prod/GSTListing/SearchGSTRegistered",
+					"protocol": "https",
+					"host": [
+						"apiservices",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"prod",
+						"GSTListing",
+						"SearchGSTRegistered"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#02.CorpPass Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "4d236137-8505-454a-9a34-cdd0a7e8171f",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "hW7hR3bM3lL5qN2jI0rD1cT8uN7sL7bI4kU5uO5vQ8eK4kD7gD",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"scope\": \"EmpIncomeSub\",\r\n    \"callback_url\": \"https://int.cadena-hrmseries.com/authorization.ashx\",\r\n    \"code\": \"e5976ce80a26d59a8b9cbfa640cccd7c78827229\",\r\n    \"state\": \"390b25fa-4427-4b10-9ae2-34d6e0cd91a1ir8a\"\r\n}"
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassToken",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEAB-Tocken",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "134d304b262776c00ed58f210fc21e15",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "2182266321c431a07839dfac3d851c9a",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"scope\": \"EmpIncomeSub\",\r\n    \"callback_url\": \"https://dev.iexams.seab.gov.sg/iexams2/login/oauth2/code/dev-iexams-iras\",\r\n    \"code\": \"795d5a282e57454088be0f7a9dd1a711382cedc9\",\r\n    \"state\": \"0120202\"\r\n}"
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassToken",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IR21Submisision",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "B7pN4yM0lR3jC2jG8lM7rI7aD7pF1bI8fW5qB2hI5dM0kL8hQ8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"scope\": \"EmpIncomeSub\",\r\n  \"callback_url\": \"https://apisandbox.iras.gov.sg/iras/devportal/sb/callbackurl\",\r\n  \"code\": \"7c86fd812dbdfa45a8755a83944fce4a832eb91b\",\r\n  \"state\": \"test\"\r\n}"
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassToken",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#02.CorpPass Token-1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "3a1a64b542cb88e3db186e32dff654a7",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "0b2db0d6ec4b8ae51ee1b932e451bcfa",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"scope\": \"DonationSub\",\r\n  \"callback_url\": \"https://stcmidemo.devtpit.com/api/iras\",\r\n  \"code\": \"a63407a2b0fe26fb6da5c87e596c131cdc8e04fc\",\r\n  \"state\": \"DonationSub\"\r\n}"
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassToken",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Epayment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "9677abea-1ab5-4bb4-a2d1-05848581edcd",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "dP2yT4cF8cR5gG3tI5hU1jY2yK4fG3qE2xY2hP2vF6mI0aX4lM",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Signature",
+						"value": "X2RDisiHR/1F2r0Bqz2xbHgwEpm70C/NwLWI1CbQMpwzLzLtprEZKo5lqWjsPbt8PQbEN2d2KkKejdVv47JiO4zSgU9xkBirUrTPWvwnjA6M3uXjUbFkP4AkrlA6PwOHYXnAH9mh42Y8LRPQA1Szkumebp1XyjTCWe4qYI/Ub/wQfOKnh/IvOozKjvhjr8AMSouzrmCyxLU10o8onMwczCpeWjA1+ASaZYNa2EEXGc+92W1IMf4D091Dnb0RLg4T4s6vKxsUU6Aurl8oJOQEjUMRgEgn0yhR71Ieye7ZONeVaeaqaUywtYdxjXOaLNCuQ6bO5nQ4j3p8+52SySoYRA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idTrans\": \"2202049180003\",\r\n  \"idEntity\": \"S8811546E   \",\r\n  \"dtEffective\": \"20220204\",\r\n  \"cdTax\": \"101\",\r\n  \"inputSource\": \"513\",\r\n  \"idReference\": \"\",\r\n  \"paymentMode\": \"018\",\r\n  \"amPayment\": \"800.00\",\r\n  \"cdSwift\": \"\",\r\n  \"cdBank\": \"\",\r\n  \"cdBankBranch\": \"\",\r\n  \"idBankAccount\": \"\",\r\n  \"idChequeNumber\": \"\",\r\n  \"idPartnerCode\": \"S\",\r\n  \"idKiosk\": \"S918\",\r\n  \"dtCreated\": \"20220204\",\r\n  \"partnerBranch\": \"SAM\"\r\n}"
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/epayment/submit",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"epayment",
+						"submit"
+					],
+					"query": [
+						{
+							"key": "x-ibm-client-id",
+							"value": "a9169287-5aa4-4d52-8bfa-4d56c4cfeeb5",
+							"disabled": true
+						},
+						{
+							"key": "x-ibm-client-secret",
+							"value": "jT0lP2lM1eI3rO8tK4kQ4jG7jR7mX4xM8yQ4bF8mO4bT6nP8mA",
+							"disabled": true
+						},
+						{
+							"key": "Accept",
+							"value": "application/json",
+							"disabled": true
+						},
+						{
+							"key": "Signature",
+							"value": "Rp/FyNdN+lvbLvKBtXfPPUtHvmKo/FQTwtij6hQ/klkpIwB2DYVCzf1shiSpmaK/1oej2kXd9EavCMgxbnjrjdK1ul+xkih2A4RZ/nhjedyMi1iEQFJSsj6jOXYT2+X6ydO1jvpOSVjRsUZ42tJRMiDjsZH5NarI7ED/XnwTZ9rVfHvXpqUXxyT5VbjRbG4iA0rYS86YK9dpTTPXPyzR+QYzI7ec5qShD0815YJ32yC4sLt983gGRNR3EFnhQMWC0EKZy43xnX/lttYzbuZhumatCpGIx4hb8cqOPH7OtBHlXKuhf3lzR7TmkB+hYa32W7BBq6xkyNP/rr+A8QDrtA==",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Epayment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-ibm-client-id",
+								"value": "9677abea-1ab5-4bb4-a2d1-05848581edcd",
+								"type": "text"
+							},
+							{
+								"key": "x-ibm-client-secret",
+								"value": "dP2yT4cF8cR5gG3tI5hU1jY2yK4fG3qE2xY2hP2vF6mI0aX4lM",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Signature",
+								"value": "X2RDisiHR/1F2r0Bqz2xbHgwEpm70C/NwLWI1CbQMpwzLzLtprEZKo5lqWjsPbt8PQbEN2d2KkKejdVv47JiO4zSgU9xkBirUrTPWvwnjA6M3uXjUbFkP4AkrlA6PwOHYXnAH9mh42Y8LRPQA1Szkumebp1XyjTCWe4qYI/Ub/wQfOKnh/IvOozKjvhjr8AMSouzrmCyxLU10o8onMwczCpeWjA1+ASaZYNa2EEXGc+92W1IMf4D091Dnb0RLg4T4s6vKxsUU6Aurl8oJOQEjUMRgEgn0yhR71Ieye7ZONeVaeaqaUywtYdxjXOaLNCuQ6bO5nQ4j3p8+52SySoYRA==",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idTrans\": \"2202049180003\",\r\n  \"idEntity\": \"S8811546E   \",\r\n  \"dtEffective\": \"20220204\",\r\n  \"cdTax\": \"101\",\r\n  \"inputSource\": \"513\",\r\n  \"idReference\": \"\",\r\n  \"paymentMode\": \"018\",\r\n  \"amPayment\": \"800.00\",\r\n  \"cdSwift\": \"\",\r\n  \"cdBank\": \"\",\r\n  \"cdBankBranch\": \"\",\r\n  \"idBankAccount\": \"\",\r\n  \"idChequeNumber\": \"\",\r\n  \"idPartnerCode\": \"S\",\r\n  \"idKiosk\": \"S918\",\r\n  \"dtCreated\": \"20220204\",\r\n  \"partnerBranch\": \"SAM\"\r\n}"
+						},
+						"url": {
+							"raw": "https://apisandbox.iras.gov.sg/iras/sb/epayment/submit",
+							"protocol": "https",
+							"host": [
+								"apisandbox",
+								"iras",
+								"gov",
+								"sg"
+							],
+							"path": [
+								"iras",
+								"sb",
+								"epayment",
+								"submit"
+							],
+							"query": [
+								{
+									"key": "x-ibm-client-id",
+									"value": "a9169287-5aa4-4d52-8bfa-4d56c4cfeeb5",
+									"disabled": true
+								},
+								{
+									"key": "x-ibm-client-secret",
+									"value": "jT0lP2lM1eI3rO8tK4kQ4jG7jR7mX4xM8yQ4bF8mO4bT6nP8mA",
+									"disabled": true
+								},
+								{
+									"key": "Accept",
+									"value": "application/json",
+									"disabled": true
+								},
+								{
+									"key": "Signature",
+									"value": "Rp/FyNdN+lvbLvKBtXfPPUtHvmKo/FQTwtij6hQ/klkpIwB2DYVCzf1shiSpmaK/1oej2kXd9EavCMgxbnjrjdK1ul+xkih2A4RZ/nhjedyMi1iEQFJSsj6jOXYT2+X6ydO1jvpOSVjRsUZ42tJRMiDjsZH5NarI7ED/XnwTZ9rVfHvXpqUXxyT5VbjRbG4iA0rYS86YK9dpTTPXPyzR+QYzI7ec5qShD0815YJ32yC4sLt983gGRNR3EFnhQMWC0EKZy43xnX/lttYzbuZhumatCpGIx4hb8cqOPH7OtBHlXKuhf3lzR7TmkB+hYa32W7BBq6xkyNP/rr+A8QDrtA==",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK"
+						},
+						{
+							"key": "Accept",
+							"value": "application/json"
+						},
+						{
+							"key": "Signature",
+							"value": "X2RDisiHR/1F2r0Bqz2xbHgwEpm70C/NwLWI1CbQMpwzLzLtprEZKo5lqWjsPbt8PQbEN2d2KkKejdVv47JiO4zSgU9xkBirUrTPWvwnjA6M3uXjUbFkP4AkrlA6PwOHYXnAH9mh42Y8LRPQA1Szkumebp1XyjTCWe4qYI/Ub/wQfOKnh/IvOozKjvhjr8AMSouzrmCyxLU10o8onMwczCpeWjA1+ASaZYNa2EEXGc+92W1IMf4D091Dnb0RLg4T4s6vKxsUU6Aurl8oJOQEjUMRgEgn0yhR71Ieye7ZONeVaeaqaUywtYdxjXOaLNCuQ6bO5nQ4j3p8+52SySoYRA=="
+						},
+						{
+							"key": "Postman-Token",
+							"value": "95cb7653-caf9-456a-9123-0bc359625b36"
+						},
+						{
+							"key": "True-Client-IP",
+							"value": "54.86.50.139"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-EdgeConnect-Session-Id",
+							"value": "c31e4968-63a5144b-2c030252"
+						},
+						{
+							"key": "X-Akamai-CONFIG-LOG-DETAIL",
+							"value": "true"
+						},
+						{
+							"key": "Akamai-Origin-Hop",
+							"value": "2"
+						},
+						{
+							"key": "X-Forwarded-For",
+							"value": "54.86.50.139, 104.120.138.79"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, max-age=0"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "5d3bc88063a5144d0159e7d3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000;includeSubDomains"
+						},
+						{
+							"key": "Host",
+							"value": "apisandbox.iras.gov.sg"
+						},
+						{
+							"key": "Content-Length",
+							"value": "93"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 23 Dec 2022 02:37:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"acknowledgeCode\": \"5132202049180003\"\n    },\n    \"returnCode\": \"10\",\n    \"info\": {\n        \"fieldInfoList\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Donation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "8d4cd1dbf8d729ee4e8c3b788d7f4ba8",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "dfd670f60d4e2f8a49adefbb0f906dcb",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Signature",
+						"value": "X2RDisiHR/1F2r0Bqz2xbHgwEpm70C/NwLWI1CbQMpwzLzLtprEZKo5lqWjsPbt8PQbEN2d2KkKejdVv47JiO4zSgU9xkBirUrTPWvwnjA6M3uXjUbFkP4AkrlA6PwOHYXnAH9mh42Y8LRPQA1Szkumebp1XyjTCWe4qYI/Ub/wQfOKnh/IvOozKjvhjr8AMSouzrmCyxLU10o8onMwczCpeWjA1+ASaZYNa2EEXGc+92W1IMf4D091Dnb0RLg4T4s6vKxsUU6Aurl8oJOQEjUMRgEgn0yhR71Ieye7ZONeVaeaqaUywtYdxjXOaLNCuQ6bO5nQ4j3p8+52SySoYRA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orgAndSubmissionInfo\": {\r\n\t\t\"validateOnly\": \"true\",\r\n\t\t\"basisYear\": \"2022\",\r\n\t\t\"organisationIDType\": \"6\",\r\n\t\t\"organisationIDNo\": \"180011032C\",\r\n\t\t\"organisationName\": \"TEST 1 CHARITY FUND\",\r\n\t\t\"batchIndicator\": \"O\",\r\n\t\t\"authorisedPersonIDNo\": \"S9991257Z\",\r\n\t\t\"authorisedPersonName\": \"TESTER\",\r\n\t\t\"authorisedPersonDesignation\": \"MANAGER\",\r\n\t\t\"telephone\": \"61234567\",\r\n\t\t\"authorisedPersonEmail\": \"TESTER@TEST1.COM\",\r\n\t\t\"numOfRecords\": \"3\",\r\n\t\t\"totalDonationAmount\": \"2599\"\r\n\t},\r\n\t\"donationDonorDtl\": [{\r\n\t\t\"recordID\": \"1\",\r\n\t\t\"idType\": \"1\",\r\n\t\t\"idNumber\": \"T8000002I\",\r\n\t\t\"individualIndicator\": \"IND\",\r\n\t\t\"name\": \"Donor 1\",\r\n\t\t\"addressLine1\": \"Block 101 #01-10\",\r\n\t\t\"addressLine2\": \"Address Avenue 2\",\r\n\t\t\"postalCode\": \"123456\",\r\n\t\t\"donationAmount\": \"100\",\r\n\t\t\"dateOfDonation\": \"20220228\",\r\n\t\t\"receiptNum\": \"DON000001\",\r\n\t\t\"typeOfDonation\": \"O\",\r\n\t\t\"namingDonation\": \"Z\"\r\n\t}, {\r\n\t\t\"recordID\": \"2\",\r\n\t\t\"idType\": \"6\",\r\n\t\t\"idNumber\": \"200099994W\",\r\n\t\t\"individualIndicator\": \"NON\",\r\n\t\t\"name\": \"Andrew Chan\",\r\n\t\t\"addressLine1\": \"1\",\r\n\t\t\"addressLine2\": \"1\",\r\n\t\t\"postalCode\": \"640501\",\r\n\t\t\"donationAmount\": \"1500\",\r\n\t\t\"dateOfDonation\": \"20220228\",\r\n\t\t\"receiptNum\": \"DON000002\",\r\n\t\t\"typeOfDonation\": \"O\",\r\n\t\t\"namingDonation\": \"Z\"\r\n\t}, {\r\n\t\t\"recordID\": \"3\",\r\n\t\t\"idType\": \"I\",\r\n\t\t\"idNumber\": \"499999999C\",\r\n\t\t\"individualIndicator\": \"NON\",\r\n\t\t\"name\": \"Andrew Chan\",\r\n\t\t\"addressLine1\": \"1\",\r\n\t\t\"addressLine2\": \"1\",\r\n\t\t\"postalCode\": \"640501\",\r\n\t\t\"donationAmount\": \"999\",\r\n\t\t\"dateOfDonation\": \"20220228\",\r\n\t\t\"receiptNum\": \"DON000003\",\r\n\t\t\"typeOfDonation\": \"O\",\r\n\t\t\"namingDonation\": \"Z\"\r\n\t}]\r\n}"
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/DonationCP/submit",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"DonationCP",
+						"submit"
+					],
+					"query": [
+						{
+							"key": "x-ibm-client-id",
+							"value": "8d4cd1dbf8d729ee4e8c3b788d7f4ba8",
+							"disabled": true
+						},
+						{
+							"key": "x-ibm-client-secret",
+							"value": "dfd670f60d4e2f8a49adefbb0f906dcb",
+							"disabled": true
+						},
+						{
+							"key": "Accept",
+							"value": "application/json",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Epayment 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "B7pN4yM0lR3jC2jG8lM7rI7aD7pF1bI8fW5qB2hI5dM0kL8hQ8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idTrans\":\"2110011000436\",\"idEntity\":\"M90141486Y\",\"dtEffective\":\"20211001\",\"cdTax\":\"300\",\"inputSource\":\"516\",\"idReference\":\"\",\"paymentMode\":\"10\",\"amPayment\":\"5.00\",\"cdSwift\":\"\",\"cdBank\":\"7171\",\"cdBankBranch\":\"\",\"idBankAccount\":\"\",\"idChequeNumber\":\"\",\"idPartnerCode\":\"\",\"idKiosk\":\"99821003\",\"dtCreated\":\"20211001\",\"partnerBranch\":\"\"}"
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/epayment/submit?x-ibm-client-id=a9169287-5aa4-4d52-8bfa-4d56c4cfeeb5&x-ibm-client-secret=jT0lP2lM1eI3rO8tK4kQ4jG7jR7mX4xM8yQ4bF8mO4bT6nP8mA&Accept=application/json&Signature=Rp/FyNdN+lvbLvKBtXfPPUtHvmKo/FQTwtij6hQ/klkpIwB2DYVCzf1shiSpmaK/1oej2kXd9EavCMgxbnjrjdK1ul+xkih2A4RZ/nhjedyMi1iEQFJSsj6jOXYT2+X6ydO1jvpOSVjRsUZ42tJRMiDjsZH5NarI7ED/XnwTZ9rVfHvXpqUXxyT5VbjRbG4iA0rYS86YK9dpTTPXPyzR+QYzI7ec5qShD0815YJ32yC4sLt983gGRNR3EFnhQMWC0EKZy43xnX/lttYzbuZhumatCpGIx4hb8cqOPH7OtBHlXKuhf3lzR7TmkB+hYa32W7BBq6xkyNP/rr+A8QDrtA==",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"epayment",
+						"submit"
+					],
+					"query": [
+						{
+							"key": "x-ibm-client-id",
+							"value": "a9169287-5aa4-4d52-8bfa-4d56c4cfeeb5"
+						},
+						{
+							"key": "x-ibm-client-secret",
+							"value": "jT0lP2lM1eI3rO8tK4kQ4jG7jR7mX4xM8yQ4bF8mO4bT6nP8mA"
+						},
+						{
+							"key": "Accept",
+							"value": "application/json"
+						},
+						{
+							"key": "Signature",
+							"value": "Rp/FyNdN+lvbLvKBtXfPPUtHvmKo/FQTwtij6hQ/klkpIwB2DYVCzf1shiSpmaK/1oej2kXd9EavCMgxbnjrjdK1ul+xkih2A4RZ/nhjedyMi1iEQFJSsj6jOXYT2+X6ydO1jvpOSVjRsUZ42tJRMiDjsZH5NarI7ED/XnwTZ9rVfHvXpqUXxyT5VbjRbG4iA0rYS86YK9dpTTPXPyzR+QYzI7ec5qShD0815YJ32yC4sLt983gGRNR3EFnhQMWC0EKZy43xnX/lttYzbuZhumatCpGIx4hb8cqOPH7OtBHlXKuhf3lzR7TmkB+hYa32W7BBq6xkyNP/rr+A8QDrtA=="
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#02.CorpPass Token Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "1e4b8992-2aa6-4f30-921a-e2b3bffd3418",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "hV4mF7yW0lA2mN4eC7tU1nH5nU5kJ1lN5qB2aF8bJ7gX0hC6wP",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"orgAndSubmissionInfo\":\r\n\t  {\r\n\t\t\"developmentName\":\"Lot One\",\r\n\t\t\"assmtYear\":\"2021\",\r\n\t\t\"authorisedPersonName\":\"Steve\",\r\n\t    \"authorisedPersonEmail\":\"Steve@bugiscentre.com.sg\"\r\n\t  },\r\n\t  \"propertyDtl\":\r\n\t  {\r\n\t\t\"recordID\":\"1\",\r\n\t\t\"propertyTaxRef\":\"0782131S\",\r\n\t\t\"unitNo\":\"#01-01\",\r\n\t\t\"letArea\":\"105.00\",\r\n\t\t\"vacantInd\":\"N\",\r\n\t    \"tenantName\":\"THE COFFEE BEAN & TEA LEAF (SINGAPORE) PTE LTD\",\r\n\t\t\"netRentAmt\":\"20909.07 \",\r\n\t\t\"svcChargeAmt\":\"2486.48\",\r\n\t\t\"advPromotionAmt\":\"904.18\",\r\n\t\t\"dateLeaseStart\":\"20181224\",\r\n\t    \"dateLeaseEnd\":\"20191223\",\r\n\t\t\"GTOAmt\":\"72307.50\",\r\n\t\t\"GTOInfo\":\"GR+0.005or0.18 of monthly GTO-WIH\",\r\n\t    \"dateGTOStart\":\"20200101\",\r\n\t\t\"dateGTOEnd\":\"20201231\",\r\n\t\t\"infoRemarks\":\"\"\r\n\t  }\r\n\t  }"
+				},
+				"url": {
+					"raw": "https://apiservices.iras.gov.sg/iras/prod/rental/Submission",
+					"protocol": "https",
+					"host": [
+						"apiservices",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"prod",
+						"rental",
+						"Submission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#02.CorpPass Token-Donation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "B7pN4yM0lR3jC2jG8lM7rI7aD7pF1bI8fW5qB2hI5dM0kL8hQ8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"scope\": \"EmpIncomeSub\",\r\n  \"callback_url\": \"https://apisandbox.iras.gov.sg/iras/devportal/sb/callbackurl\",\r\n  \"code\": \"7c86fd812dbdfa45a8755a83944fce4a832eb91b\",\r\n  \"state\": \"test\"\r\n}"
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassToken",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Salary",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-IBM-Client-Id",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the X-IBM-Client-Id header generated by Postman.",
+						"key": "X-IBM-Client-Id",
+						"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+						"type": "text"
+					},
+					{
+						"key": "X-IBM-Client-Secret",
+						"value": "B7pN4yM0lR3jC2jG8lM7rI7aD7pF1bI8fW5qB2hI5dM0kL8hQ8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputType\" : \"text\",\r\n    \"ir8aInput\" : \"09890890809809809\",\r\n    \"ir8sInput\" : \"\",\r\n    \"a8aInput\" : \"\",\r\n    \"a8bInput\" : \"\",\r\n    \"bypass\" : \"true\",\r\n    \"validateOnly\" : \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb//EmpIncomeRecords/Submit",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"",
+						"EmpIncomeRecords",
+						"Submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PPTYDel",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-IBM-Client-Id",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the X-IBM-Client-Id header generated by Postman.",
+						"key": "X-IBM-Client-Id",
+						"value": "4cf18682-8069-429c-98fb-5200f1c3eff3",
+						"type": "text"
+					},
+					{
+						"key": "X-IBM-Client-Secret",
+						"value": "B7pN4yM0lR3jC2jG8lM7rI7aD7pF1bI8fW5qB2hI5dM0kL8hQ8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputType\" : \"text\",\r\n    \"ir8aInput\" : \"09890890809809809\",\r\n    \"ir8sInput\" : \"\",\r\n    \"a8aInput\" : \"\",\r\n    \"a8bInput\" : \"\",\r\n    \"bypass\" : \"true\",\r\n    \"validateOnly\" : \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb//EmpIncomeRecords/Submit",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"",
+						"EmpIncomeRecords",
+						"Submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "G5G8",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "c53b5e9b-f595-4e20-bcb6-ed4137b3f6cb",
+						"type": "text"
+					},
+					{
+						"key": "X-IBM-Client-Secret",
+						"value": "7ee20527b57a6fa426a53337d6cba9b5",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Il9SQzZ4d09NdmJ0dDZhald1WmU2R2xncy1qM3dtNXJpQXlDVW9SYXNhLUkifQ.eyJzdWIiOiJSMzJQRjgxNTJBX1M5OTkxMjc0WiIsImp0aSI6IlJDSmstNy1mMnRRbEY1WDVhN1ItRlIwZHFsaHJEaXViOV84bU85OXIiLCJzY29wZSI6WyJHU1RGNUY4U3ViQ1AiXSwidG9rZW5OYW1lIjoiYWNjZXNzX3Rva2VuIiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJleHBpcmVzX2luIjoxODAwLCJhdWQiOiJTVEctU0EtSVJBUy1DUCIsInJlYWxtIjoiaXJhcy1jcCIsImlzcyI6Imh0dHBzOi8vdGVzdC5hcGkubXlpbmZvLmdvdi5zZy9zZXJ2aWNlYXV0aC9pcmFzLWNwIiwiaWF0IjoxNjY5MDMyOTE2LCJuYmYiOjE2NjkwMzI5MTYsImV4cCI6MTY2OTAzNDcxNn0.jcgUnP2USwIDSOZQOIb5y0xaDkx1G_wt2ycy0HxWBsDcXpkKxVp68NqFH1zdhs5K-ojAJrpjeSrZ1Z85Ezu-R9KKBHcz8n6MJZMzLAScU0SWVubSMeUZT_CL4sjvapph4NHMmwpg2NIZdQvSyFfK5GCmrWfu0aF50cW46Cdn0NAC4Ky-crpOdEgDJImHlpuKxafeZsovKr4KWpZKpLK89gp48n7iMYjLSIYnTWiElrxtKSwPAFQM8sW_zb4HKn8DuF5v1usZRY6PeQxPtusQJ5oveLlkojkIze-7O41yqGt26pjjy6zgNkpFYD03z3_JMGv-pWh3b_VPr0KMla6VOQ",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"selfEmployedIncome\": {\r\n    \"reportingYear\": 2022,\r\n    \"batchSize\": 1,\r\n    \"tradeCode\": 49219,\r\n    \"intermediary\": {\r\n      \"organisationID\": \"T16ZZ0001G\",\r\n      \"organisationName\": \"ABC Pte. Ltd.\",\r\n      \"contactID\": \"S9812381D\",\r\n      \"contactName\": \"David (Chan)\",\r\n      \"contactDesignation\": \"Admin Officer\",\r\n      \"contactNumber\": \"91234567\",\r\n      \"contactEmail\": \"davidchan@ABC.com.sg\"\r\n    },\r\n    \"sep\": [\r\n      {\r\n        \"recordID\": 1,\r\n        \"identification\": \"S9812381D\",\r\n        \"name\": \"Cheong Chee Weng (Zhang Zhirong)\",\r\n        \"revenue\": {\r\n          \"grossFaresCollected\": 15000,\r\n          \"incentiveRebatesPromotion\": 5000\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/SEPSubmission/ByIntermediary",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"SEPSubmission",
+						"ByIntermediary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EmpSumbit",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "a0be5c07d6769c849b013f3c11b47564",
+						"type": "text"
+					},
+					{
+						"key": "X-IBM-Client-Secret",
+						"value": "6d85468c656212c3f721cb7fcb48cd35",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Il9SQzZ4d09NdmJ0dDZhald1WmU2R2xncy1qM3dtNXJpQXlDVW9SYXNhLUkifQ.eyJzdWIiOiIxODAwMTc2MThHX1M5OTkxMjU3WiIsImp0aSI6ImhwLUJCZWpUZFZueUxzNjBLc3BnaS13c2h2V29JS1E0d3RqbmRNd0kiLCJzY29wZSI6WyJFbXBJbmNvbWVTdWIiXSwidG9rZW5OYW1lIjoiYWNjZXNzX3Rva2VuIiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJleHBpcmVzX2luIjoxODAwLCJhdWQiOiJTVEctU0EtSVJBUy1DUCIsInJlYWxtIjoiaXJhcy1jcCIsImlzcyI6Imh0dHBzOi8vdGVzdC5hcGkubXlpbmZvLmdvdi5zZy9zZXJ2aWNlYXV0aC9pcmFzLWNwIiwiaWF0IjoxNjc4MzQzNTIxLCJuYmYiOjE2NzgzNDM1MjEsImV4cCI6MTY3ODM0NTMyMX0.Vs6kYwQPY_iGGnDJS_rwKEu4e6sBeCktmq1cktFronyysMqP2zTFSkPjGj7Rmn_KLasLBnVGauGWz4YkCG3O4iKmiDTvaNeBpkGUdFCtOmxhNMwe4a4a86a4tEyKbk6d-juVCo4l6JtLnyLyjn-tzR0zuQPZ7kxJsU2g41iwE8vPODp6xALN-AA_g2ftLBDINwG_9EfxBEsK9d4Bb1tOqJCA3ipCy4P9NcTNDLVoemrkbx0V3ZHiGIErGdBZIPSYxNbDCiGQ32qrP4gOw2QO8EtZf_N7rNFD7ouEkLLuyhyhGHr1EFDWFOUvQmO2oyntza1a9SBhryUxOWgonxYh_Q",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"inputType\":\"xml\",\r\n\"a8bInput\":\"\",\r\n\"a8aInput\":\"\",\r\n\"ir8sInput\":\"\",\r\n\"ir8aInput\":\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\" standalone=\\\"no\\\"?><IR8A xmlns=\\\"http://www.iras.gov.sg/IR8ADef\\\"><IR8AHeader><ESubmissionSDSC xmlns=\\\"http://tempuri.org/ESubmissionSDSC.xsd\\\"><FileHeaderST><RecordType>0</RecordType><Source>4</Source><BasisYear>2022</BasisYear><PaymentType>08</PaymentType><OrganizationID>8</OrganizationID><OrganizationIDNo>180011032C</OrganizationIDNo><AuthorisedPersonName>AUTHORIZED PERSON</AuthorisedPersonName><AuthorisedPersonDesignation>MANAGER</AuthorisedPersonDesignation><EmployerName>MIN- PMO MIN- PMO</EmployerName><Telephone>84848484</Telephone><AuthorisedPersonEmail>ABSDCFE.RESDT@CYZ.COM</AuthorisedPersonEmail><BatchIndicator>O</BatchIndicator><BatchDate>20230222</BatchDate><IncorporationDate></IncorporationDate><DivisionOrBranchName>AHDKD</DivisionOrBranchName></FileHeaderST></ESubmissionSDSC></IR8AHeader><Details><IR8ARecord><ESubmissionSDSC xmlns=\\\"http://tempuri.org/ESubmissionSDSC.xsd\\\"><IR8AST><RecordType xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">1</RecordType><IDType xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">1</IDType><IDNo xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">S8067899A</IDNo><NameLine1 xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">PSD GEN 0&apos;7</NameLine1><NameLine2 xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></NameLine2><AddressType xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">C</AddressType><BlockNo xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></BlockNo><StName xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></StName><LevelNo xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></LevelNo><UnitNo xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></UnitNo><PostalCode xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></PostalCode><AddressLine1 xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">101 HIGH&apos;STREET SINGAPORE SING</AddressLine1><AddressLine2 xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">APORE</AddressLine2><AddressLine3 xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">SINGAPORE</AddressLine3><TX_UF_POSTAL_CODE xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">123456</TX_UF_POSTAL_CODE><CountryCode xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></CountryCode><Nationality xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">301</Nationality><Sex xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">F</Sex><DateOfBirth xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">19800101</DateOfBirth><Amount xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">24000</Amount><PaymentPeriodFromDate xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">20220101</PaymentPeriodFromDate><PaymentPeriodToDate xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">20220831</PaymentPeriodToDate><MBF xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</MBF><Donation xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</Donation><CPF xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</CPF><Insurance xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</Insurance><Salary xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">24000</Salary><Bonus xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</Bonus><DirectorsFees xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</DirectorsFees><Others xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</Others><ShareOptionGainsS101g xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</ShareOptionGainsS101g><ExemptIncome xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</ExemptIncome><IncomeForTaxBorneByEmployer xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</IncomeForTaxBorneByEmployer><IncomeForTaxBorneByEmployee xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</IncomeForTaxBorneByEmployee><BenefitsInKind xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></BenefitsInKind><S45Applicable xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></S45Applicable><IncomeTaxBorneByEmployer xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></IncomeTaxBorneByEmployer><GratuityNoticePymExGratiaPaid xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></GratuityNoticePymExGratiaPaid><CompensationRetrenchmentBenefitsPaid xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></CompensationRetrenchmentBenefitsPaid><ApprovalObtainedFromIRAS xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></ApprovalObtainedFromIRAS><ApprovalDate xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></ApprovalDate><CessationProvisions xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></CessationProvisions><IR8SApplicable xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></IR8SApplicable><ExemptOrRemissionIncomeIndicator xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></ExemptOrRemissionIncomeIndicator><CompensationAndGratuity xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></CompensationAndGratuity><GrossCommissionAmount xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</GrossCommissionAmount><GrossCommissionPeriodFrom xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></GrossCommissionPeriodFrom><GrossCommissionPeriodTo xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></GrossCommissionPeriodTo><GrossCommissionIndicator xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></GrossCommissionIndicator><Pension xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</Pension><TransportAllowance xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</TransportAllowance><EntertainmentAllowance xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</EntertainmentAllowance><OtherAllowance xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</OtherAllowance><GratuityNoticePymExGratia xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</GratuityNoticePymExGratia><RetrenchmentBenefits xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</RetrenchmentBenefits><RetrenchmentBenefitsUpto311292 xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</RetrenchmentBenefitsUpto311292><RetrenchmentBenefitsFrom1993 xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</RetrenchmentBenefitsFrom1993><EmployerContributionToPensionOrPFOutsideSg xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</EmployerContributionToPensionOrPFOutsideSg><ExcessEmployerContributionToCPF xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</ExcessEmployerContributionToCPF><ShareOptionGainsS101b xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</ShareOptionGainsS101b><BenefitsInKindValue xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</BenefitsInKindValue><EmployeesVoluntaryContributionToCPF xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">0</EmployeesVoluntaryContributionToCPF><Designation xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">PSD SCENARIO</Designation><CommencementDate xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></CommencementDate><CessationDate xmlns=\\\"http://www.iras.gov.sg/IR8A\\\">20220831</CessationDate><BonusDecalrationDate xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></BonusDecalrationDate><DirectorsFeesApprovalDate xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></DirectorsFeesApprovalDate><RetirementBenefitsFundName xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></RetirementBenefitsFundName><DesignatedPensionOrProvidentFundName xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></DesignatedPensionOrProvidentFundName><BankName xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></BankName><PayrollDate xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></PayrollDate><Filler xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></Filler><GratuityOrCompensationDetailedInfo xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></GratuityOrCompensationDetailedInfo><ShareOptionGainsDetailedInfo xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></ShareOptionGainsDetailedInfo><Remarks xmlns=\\\"http://www.iras.gov.sg/IR8A\\\"></Remarks></IR8AST></ESubmissionSDSC></IR8ARecord></Details><IR8ATrailer><ESubmissionSDSC xmlns=\\\"http://tempuri.org/ESubmissionSDSC.xsd\\\"><IR8ATrailerST><RecordType>2</RecordType><NoOfRecords>000001</NoOfRecords><TotalPayment>24000</TotalPayment><TotalSalary>24000</TotalSalary><TotalBonus>0</TotalBonus><TotalDirectorsFees>0</TotalDirectorsFees><TotalOthers>0</TotalOthers><TotalExemptIncome>0</TotalExemptIncome><TotalIncomeForTaxBorneByEmployer>0</TotalIncomeForTaxBorneByEmployer><TotalIncomeForTaxBorneByEmployee>0</TotalIncomeForTaxBorneByEmployee><TotalDonation>0</TotalDonation><TotalCPF>0</TotalCPF><TotalInsurance>0</TotalInsurance><TotalMBF>0</TotalMBF><Filler></Filler></IR8ATrailerST></ESubmissionSDSC></IR8ATrailer></IR8A>\",\r\n\"bypass\":\"true\",\r\n\"validateOnly\":\"false\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/EmpIncomeRecords/Submit",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"EmpIncomeRecords",
+						"Submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EmpSumbit Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "98f263f0bcf5043f662a4337635d321c",
+						"type": "text"
+					},
+					{
+						"key": "X-IBM-Client-Secret",
+						"value": "1d9e7ec89a895165d5007da65f23381d",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Il9SQzZ4d09NdmJ0dDZhald1WmU2R2xncy1qM3dtNXJpQXlDVW9SYXNhLUkifQ.eyJzdWIiOiIxODAwMTc2MThHX1M5OTkxMjU3WiIsImp0aSI6Imk0eWRJWXRXaXc3MHdnTlVOYUVTSVZSZHJzN0UtMkRxODVzWG5KN3oiLCJzY29wZSI6WyJFbXBJbmNvbWVTdWIiXSwidG9rZW5OYW1lIjoiYWNjZXNzX3Rva2VuIiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJleHBpcmVzX2luIjoxODAwLCJhdWQiOiJTVEctU0EtSVJBUy1DUCIsInJlYWxtIjoiaXJhcy1jcCIsImlzcyI6Imh0dHBzOi8vdGVzdC5hcGkubXlpbmZvLmdvdi5zZy9zZXJ2aWNlYXV0aC9pcmFzLWNwIiwiaWF0IjoxNjc4MzU3ODgyLCJuYmYiOjE2NzgzNTc4ODIsImV4cCI6MTY3ODM1OTY4Mn0.WNjkiEPNq4zUFqEyZZTeExLggDcdlq21DpHq1bx3CEHNcW5WRiqnQ9Jr58QPDwcQpq_12oNZxC3uKo1KHiIi7UjrsFzoL0Gf-vrl-uVGjzdVc2Y5U6-NogjguTser7_FbIQ8G1ndALPx1wn7sgm1aPDn3rjSm2sn6S71pulVTdDG1CuWYRL1AxOLr2qNA5FSl3aukZpvrgHud1JXShuMD1s-lUE1sRhuNuNAO-if2RsuHptyDxPQH-dOy9MppU7sepfTfEHyfpZqD45285EZcRIZEggFzgDzqnRhR_WnvsVxyHmyU_RxxgE_N7hFdO9uCq1ZHtQgneOpETxxmSEmOQ",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"validateOnly\": \"0\", \"bypass\": \"0\", \"ir8aInput\": \"062022088180011032C a a 180011032C Pte Ltd a a@a.com O20230309 IR8A \\r\\n11S4263356I Ang Peh Siong 301F1959020766000000020220101202212310000000000510000000000288000000480000000600000000264000000000000000000000000000000000000000000 N N 120000000002022010120221231B000000000009600000000084000000000720000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Director 20211019 2022013120220914 \\r\\n11S4279476G Shane Tan 301F1986072842500000020220101202212310000089000785000000000305000000600000000000000000600000000000000000000000000000000000000000000 N N 00000000000 000000000006000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Accounts 20210101 20220131 \\r\\n11S5213978C Sony Teo 301F1987022416450000020220101202212310000045000329000000000164500000000000000000000000000000000000000000000000000000000000000000000 N N 00000000000 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 IT Support 20210202 \\r\\n11S0272397B Kelly Loong 301M1983111626386000020220101202212310000012000527400000000225460000000000000000000000384000000000000000000000000000000000000000000 N N 00000000000 000000000007200000000000000000000312000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Sales Manager 20190808 \\r\\n11S8654040A Leroy Chan 304F1971110510800000020220101202212310000025000144000000000720000000120000000240000000000000000000000000000000000000000000000000000 N N 00000000000 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Sales Executive 20130505 2022013120220914 \\r\\n11S2888530Z James Deng 301M1968081111220000020220101202212312340000000134400000000588000000000000000450000000840000000000000000000000000000000000000000000 N N 00000000000 000000000006000000000018000000000600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Dispatch 19920710 20220914 \\r\\n11S9150703Z Wong Yoo Lee 301F1986111333846000020220101202212310000013000676900000000312460000260000000000000000000000000000000000000000000000000000000000000 N N 00000000000 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Admin 20121130 20220131 \\r\\n11S1028570D Keith Heng 301F1978121324750000020220101202212310000000000495000000000234000000000000000000000000135000000000000000000000000000000000000000000 N N 00000000000 000000000000000000000000000000000135000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 HR 19900608 \\r\\n11S3779649B David Gan 301M1978042040910000020220101202212310000000000818000000000409100000000000000000000000000000000000000000000000000000000000000000000 N N 00000000000 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Accounts 20080917 \\r\\n11S1061943B Lam Song Kiat 301M1961041716800000020220101202212310000000000142800000000168000000000000000000000000000000000000000000000000000000000000000000000 N N 00000000000 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Supervisor 20090323 \\r\\n12F3075559Q Loh Poh Chan 304M1971041726075000020220101202212310000000000000000000000145150000250000000650000000256000000000000000000000000000000000000000000 N N 156000000002022010120221231B000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Supervisor 20030918 2022013120220914 \\r\\n12F5163005W How Gee Fee 304M1994041717500000020220101202212310000000000000000000000175000000000000000000000000000000000000000000000000000000000000000000000 N N 00000000000 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Technician 20110428 \\r\\n12F3155845W How Ee Eng 304M1998041725000000020220101202212310000000000000000000000250000000000000000000000000000000000000000000000000000000000000000000000 N N 00000000000 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Driver 20110428 \\r\\n12F7299827T Zheng Ke Xin 336M2001041723450000020220101202212310000000000000000000000228500000000000000000000000600000000000000000000000000000000000000000000 N N 600000000002022010120221231B000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Technician 20110428 \\r\\n11S0428048B Toh Poh Nor 301F1973013051700000020220101202212310000018000984000000000517000000000000000000000000000000000000000000000000000000000000000000000 N N 00000000000 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Sale Executive 20080917 \\r\\n11S5548316G Soh Cho Fey 301F1985071654000000020220101202212310000060000000000000000540000000000000000000000000000000000000000000000000000000000000000000000 N N 00000000000 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 HR Executive 20080917 \\r\\n11T5275808J John Lim Wah Fook 301M2005080527600000020220101202212310000000000552000000000276000000000000000000000000000000000000000000000000000000000000000000000 N N 00000000000 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Accounts 20140415 \\r\\n11S8483328B Choo Wan Yee 301F1982111860000000020220101202212310000000000120000000000600000000000000000000000000000000000000000000000000000000000000000000000 N N 00000000000 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Admin 19991009 \\r\\n11S8471899H Penny Loyld 301M1994012020600000020220101202212310000000000144000000000120000000300000000560000000000000000000000000000000000000000000000000000 N N 00000000000 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Driver 19921205 2022013120220914 \\r\\n11T3872543I Chris John Tan 301M2001090433600000020220101202212310000000000672000000000336000000000000000000000000000000000000000000000000000000000000000000000 N N 00000000000 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Technician 20050204 \\r\\n220 116202300000813433000000804000000000196000000000721900000000000000000000000000000000000000000000208000000000111799000000000000000000234000000000 \", \"ir8sInput\": \"\", \"a8aInput\": \"\", \"a8bInput\": \"\", \"inputType\": \"text\" }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/EmpIncomeRecords/Submit",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"EmpIncomeRecords",
+						"Submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trusted hub - Undelevered",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "c53b5e9b-f595-4e20-bcb6-ed4137b3f6cb",
+						"type": "text"
+					},
+					{
+						"key": "X-IBM-Client-Secret",
+						"value": "7ee20527b57a6fa426a53337d6cba9b5",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Il9SQzZ4d09NdmJ0dDZhald1WmU2R2xncy1qM3dtNXJpQXlDVW9SYXNhLUkifQ.eyJzdWIiOiIxODAwMTc2MThHX1M5OTkxMjU3WiIsImp0aSI6Imk0eWRJWXRXaXc3MHdnTlVOYUVTSVZSZHJzN0UtMkRxODVzWG5KN3oiLCJzY29wZSI6WyJFbXBJbmNvbWVTdWIiXSwidG9rZW5OYW1lIjoiYWNjZXNzX3Rva2VuIiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJleHBpcmVzX2luIjoxODAwLCJhdWQiOiJTVEctU0EtSVJBUy1DUCIsInJlYWxtIjoiaXJhcy1jcCIsImlzcyI6Imh0dHBzOi8vdGVzdC5hcGkubXlpbmZvLmdvdi5zZy9zZXJ2aWNlYXV0aC9pcmFzLWNwIiwiaWF0IjoxNjc4MzU3ODgyLCJuYmYiOjE2NzgzNTc4ODIsImV4cCI6MTY3ODM1OTY4Mn0.WNjkiEPNq4zUFqEyZZTeExLggDcdlq21DpHq1bx3CEHNcW5WRiqnQ9Jr58QPDwcQpq_12oNZxC3uKo1KHiIi7UjrsFzoL0Gf-vrl-uVGjzdVc2Y5U6-NogjguTser7_FbIQ8G1ndALPx1wn7sgm1aPDn3rjSm2sn6S71pulVTdDG1CuWYRL1AxOLr2qNA5FSl3aukZpvrgHud1JXShuMD1s-lUE1sRhuNuNAO-if2RsuHptyDxPQH-dOy9MppU7sepfTfEHyfpZqD45285EZcRIZEggFzgDzqnRhR_WnvsVxyHmyU_RxxgE_N7hFdO9uCq1ZHtQgneOpETxxmSEmOQ",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"UndeliveredInfo\": {\r\n\t\t\"TransmittedDate\": \"20220408\",\r\n\t\t\"TotalRecord\": 1,\r\n\t\t\"BatchID\": \"20220408_01\"\r\n\t},\r\n\t\"UndeliveredDetail\": [{\r\n\t\t\"RecordID\": 1,\r\n\t\t\"DIN\": 123456789123,\r\n\t\t\"DocumentType\": 1,\r\n\t\t\"UDReason\": 1,\r\n\t\t\"NameSeqNumber\": 0\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/irin3/THUndeliveredProcess/retrieve",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"irin3",
+						"THUndeliveredProcess",
+						"retrieve"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trusted hub - Recon",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "c53b5e9b-f595-4e20-bcb6-ed4137b3f6cb",
+						"type": "text"
+					},
+					{
+						"key": "X-IBM-Client-Secret",
+						"value": "7ee20527b57a6fa426a53337d6cba9b5",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Il9SQzZ4d09NdmJ0dDZhald1WmU2R2xncy1qM3dtNXJpQXlDVW9SYXNhLUkifQ.eyJzdWIiOiIxODAwMTc2MThHX1M5OTkxMjU3WiIsImp0aSI6Imk0eWRJWXRXaXc3MHdnTlVOYUVTSVZSZHJzN0UtMkRxODVzWG5KN3oiLCJzY29wZSI6WyJFbXBJbmNvbWVTdWIiXSwidG9rZW5OYW1lIjoiYWNjZXNzX3Rva2VuIiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJleHBpcmVzX2luIjoxODAwLCJhdWQiOiJTVEctU0EtSVJBUy1DUCIsInJlYWxtIjoiaXJhcy1jcCIsImlzcyI6Imh0dHBzOi8vdGVzdC5hcGkubXlpbmZvLmdvdi5zZy9zZXJ2aWNlYXV0aC9pcmFzLWNwIiwiaWF0IjoxNjc4MzU3ODgyLCJuYmYiOjE2NzgzNTc4ODIsImV4cCI6MTY3ODM1OTY4Mn0.WNjkiEPNq4zUFqEyZZTeExLggDcdlq21DpHq1bx3CEHNcW5WRiqnQ9Jr58QPDwcQpq_12oNZxC3uKo1KHiIi7UjrsFzoL0Gf-vrl-uVGjzdVc2Y5U6-NogjguTser7_FbIQ8G1ndALPx1wn7sgm1aPDn3rjSm2sn6S71pulVTdDG1CuWYRL1AxOLr2qNA5FSl3aukZpvrgHud1JXShuMD1s-lUE1sRhuNuNAO-if2RsuHptyDxPQH-dOy9MppU7sepfTfEHyfpZqD45285EZcRIZEggFzgDzqnRhR_WnvsVxyHmyU_RxxgE_N7hFdO9uCq1ZHtQgneOpETxxmSEmOQ",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ReconInfo\": {\r\n\t\t\"TransmittedDate\": \"2018-04-08\",\r\n\t\t\"TotalRecord\": 1\r\n\t},\r\n\t\"ReconDetail\": [{\r\n\t\t\"RecordID \": 1,\r\n\t\t\"BatchID\": \"18-A7-200120\",\r\n\t\t\"ReconType\": 2,\r\n\t\t\"TotalRecordsSubmitted\": 5,\r\n\t\t\"TotalRecordsFailed\": 0,\r\n\t\t\"BatchStatus\": 1,\r\n\t\t\"BatchDate\": \"2018-01-05\",\r\n\t\t\"FieldsCaptured\": 100\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/irin3/THReconProcess/retrieve",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"irin3",
+						"THReconProcess",
+						"retrieve"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check GST Register SB",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "c53b5e9b-f595-4e20-bcb6-ed4137b3f6cb",
+						"type": "text"
+					},
+					{
+						"key": "X-IBM-Client-Secret",
+						"value": "7ee20527b57a6fa426a53337d6cba9b5",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Il9SQzZ4d09NdmJ0dDZhald1WmU2R2xncy1qM3dtNXJpQXlDVW9SYXNhLUkifQ.eyJzdWIiOiIxODAwMTc2MThHX1M5OTkxMjU3WiIsImp0aSI6Imk0eWRJWXRXaXc3MHdnTlVOYUVTSVZSZHJzN0UtMkRxODVzWG5KN3oiLCJzY29wZSI6WyJFbXBJbmNvbWVTdWIiXSwidG9rZW5OYW1lIjoiYWNjZXNzX3Rva2VuIiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJleHBpcmVzX2luIjoxODAwLCJhdWQiOiJTVEctU0EtSVJBUy1DUCIsInJlYWxtIjoiaXJhcy1jcCIsImlzcyI6Imh0dHBzOi8vdGVzdC5hcGkubXlpbmZvLmdvdi5zZy9zZXJ2aWNlYXV0aC9pcmFzLWNwIiwiaWF0IjoxNjc4MzU3ODgyLCJuYmYiOjE2NzgzNTc4ODIsImV4cCI6MTY3ODM1OTY4Mn0.WNjkiEPNq4zUFqEyZZTeExLggDcdlq21DpHq1bx3CEHNcW5WRiqnQ9Jr58QPDwcQpq_12oNZxC3uKo1KHiIi7UjrsFzoL0Gf-vrl-uVGjzdVc2Y5U6-NogjguTser7_FbIQ8G1ndALPx1wn7sgm1aPDn3rjSm2sn6S71pulVTdDG1CuWYRL1AxOLr2qNA5FSl3aukZpvrgHud1JXShuMD1s-lUE1sRhuNuNAO-if2RsuHptyDxPQH-dOy9MppU7sepfTfEHyfpZqD45285EZcRIZEggFzgDzqnRhR_WnvsVxyHmyU_RxxgE_N7hFdO9uCq1ZHtQgneOpETxxmSEmOQ",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"regID\":\"830219749425152\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/GSTListing/SearchGSTRegistered",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"GSTListing",
+						"SearchGSTRegistered"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CalProABSD",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "c53b5e9b-f595-4e20-bcb6-ed4137b3f6cb",
+						"type": "text"
+					},
+					{
+						"key": "X-IBM-Client-Secret",
+						"value": "7ee20527b57a6fa426a53337d6cba9b5",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Il9SQzZ4d09NdmJ0dDZhald1WmU2R2xncy1qM3dtNXJpQXlDVW9SYXNhLUkifQ.eyJzdWIiOiIxODAwMTc2MThHX1M5OTkxMjU3WiIsImp0aSI6Imk0eWRJWXRXaXc3MHdnTlVOYUVTSVZSZHJzN0UtMkRxODVzWG5KN3oiLCJzY29wZSI6WyJFbXBJbmNvbWVTdWIiXSwidG9rZW5OYW1lIjoiYWNjZXNzX3Rva2VuIiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJleHBpcmVzX2luIjoxODAwLCJhdWQiOiJTVEctU0EtSVJBUy1DUCIsInJlYWxtIjoiaXJhcy1jcCIsImlzcyI6Imh0dHBzOi8vdGVzdC5hcGkubXlpbmZvLmdvdi5zZy9zZXJ2aWNlYXV0aC9pcmFzLWNwIiwiaWF0IjoxNjc4MzU3ODgyLCJuYmYiOjE2NzgzNTc4ODIsImV4cCI6MTY3ODM1OTY4Mn0.WNjkiEPNq4zUFqEyZZTeExLggDcdlq21DpHq1bx3CEHNcW5WRiqnQ9Jr58QPDwcQpq_12oNZxC3uKo1KHiIi7UjrsFzoL0Gf-vrl-uVGjzdVc2Y5U6-NogjguTser7_FbIQ8G1ndALPx1wn7sgm1aPDn3rjSm2sn6S71pulVTdDG1CuWYRL1AxOLr2qNA5FSl3aukZpvrgHud1JXShuMD1s-lUE1sRhuNuNAO-if2RsuHptyDxPQH-dOy9MppU7sepfTfEHyfpZqD45285EZcRIZEggFzgDzqnRhR_WnvsVxyHmyU_RxxgE_N7hFdO9uCq1ZHtQgneOpETxxmSEmOQ",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"clientID\":\"5517835803557888\",\"value\":\"100000\",\"nonResiValue\":\"100000\",\"documentDate\":\"2014-02-22\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/SD/CalPropertyBSD",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"SD",
+						"CalPropertyBSD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "THRecon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "THRecon Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Products",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Ir@sapisupp0rt",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "api_support@iras.gov.sg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "c53b5e9b-f595-4e20-bcb6-ed4137b3f6cb",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "7ee20527b57a6fa426a53337d6cba9b5",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://apim.sivwais110o.irasortbp.gov.sg/analytics/catalogs/iras/Sandbox/analytics-service/",
+					"protocol": "https",
+					"host": [
+						"apim",
+						"sivwais110o",
+						"irasortbp",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"analytics",
+						"catalogs",
+						"iras",
+						"Sandbox",
+						"analytics-service",
+						""
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "REPLACE_THIS_VALUE",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API-Token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Ir@sapisupp0rt",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "api_support@iras.gov.sg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "c53b5e9b-f595-4e20-bcb6-ed4137b3f6cb",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "7ee20527b57a6fa426a53337d6cba9b5",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://apiconnect-dev.ibm.com/api/token",
+					"protocol": "https",
+					"host": [
+						"apiconnect-dev",
+						"ibm",
+						"com"
+					],
+					"path": [
+						"api",
+						"token"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "REPLACE_THIS_VALUE",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://apim.sivwais110o.irasortbp.gov.sg/api/catalogs/iras/SB/subscriptions",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Ir@sapisupp0rt",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "api_support@iras.gov.sg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apim.sivwais110o.irasortbp.gov.sg/manager/iras/manage/catalog/36e27d00-47cf-49b0-9e57-c1ede76ef08b/products",
+					"protocol": "https",
+					"host": [
+						"apim",
+						"sivwais110o",
+						"irasortbp",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"manager",
+						"iras",
+						"manage",
+						"catalog",
+						"36e27d00-47cf-49b0-9e57-c1ede76ef08b",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://apim.sivwais110o.irasortbp.gov.sg/api/token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Ir@sapisupp0rt",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "api_support@iras.gov.sg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apim.sivwais110o.irasortbp.gov.sg/api/token",
+					"protocol": "https",
+					"host": [
+						"apim",
+						"sivwais110o",
+						"irasortbp",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"api",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Commission Submission - Prod",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "c53b5e9b-f595-4e20-bcb6-ed4137b3f6cb"
+					},
+					{
+						"key": "X-IBM-Client-Secret",
+						"value": "7ee20527b57a6fa426a53337d6cba9b5"
+					},
+					{
+						"key": "access_token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Il9SQzZ4d09NdmJ0dDZhald1WmU2R2xncy1qM3dtNXJpQXlDVW9SYXNhLUkifQ.eyJzdWIiOiIxODAwOTU2MjVaX1M5OTkxMjU2QSIsImp0aSI6InJRYm5kMVcyV2lMM0h3YkkydDFyaThRUVB3bzFJc0hUUEg3VDZJLWEiLCJzY29wZSI6WyJDb21taXNzaW9uU3ViIl0sInRva2VuTmFtZSI6ImFjY2Vzc190b2tlbiIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJncmFudF90eXBlIjoiYXV0aG9yaXphdGlvbl9jb2RlIiwiZXhwaXJlc19pbiI6MTgwMCwiYXVkIjoiU1RHLVNBLUlSQVMtQ1AiLCJyZWFsbSI6ImlyYXMtY3AiLCJpc3MiOiJodHRwczovL3Rlc3QuYXBpLm15aW5mby5nb3Yuc2cvc2VydmljZWF1dGgvaXJhcy1jcCIsImlhdCI6MTY3Njk1NDg4MCwibmJmIjoxNjc2OTU0ODgwLCJleHAiOjE2NzY5NTY2ODB9.j7H0aXBAilb1xRaQI-ZCfO47ihztEXyNNAlelmTHmrUyQ37hip3kLv2KXvEIYHPB3UUqGCOKGHmOdUxk6FRglJ12TSdtACDuc2W4qiFGntD1VvQwdwFpsFhtJFtp4tOvEjcAO0-1FBXmXF-Idxc_DJkdw3c6BQZ6nqoVccS3vM5a91HxzyWSsRrZzu3BczfqPW7ygfLHdvy7QwfxQ9TfdT_b9o8eLclW4zjiLlPqs3TD9rBxCPmjSvLi6NZ6cpo0Z4PsOIiKRqAqsb4t2Nr3xh1cWLOTBi8ZLiVPMN2bE0DSxohHt-RkxtZWvJ70tJRI0ih-hs-mCXEXpe-rzYrSVA"
+					},
+					{
+						"key": "User-Agent",
+						"value": "axios/0.24.0",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orgAndSubmissionInfo\": {\n        \"basisYear\": 2022,\n        \"organisationName\": \"UNICITY SINGAPORE PTE. LTD.\",\n        \"telephone\": \"67333266\",\n        \"authorisedPersonEmail\": \"finance.sg@unicity.com\",\n        \"organisationIDType\": \"8\",\n        \"organisationIDNo\": \"180095625Z\",\n        \"authorisedPersonIDType\": \"A\",\n        \"authorisedPersonIDNo\": \"A4019079G\",\n        \"authorisedPersonName\": \"susanlim9585\",\n        \"authorisedPersonDesignation\": \"IT SUPPORT\",\n        \"batchIndicator\": \"O\",\n        \"numOfRecords\": 959,\n        \"totalGrossCommission\": \"3461\",\n        \"validateOnly\": false\n    },\n    \"commissionEarnerDtl\": [\n        {\n            \"recordID\": 1,\n            \"idType\": 1,\n            \"idNumber\": \"S8513809Z\",\n            \"name\": \"Sim Bao Cun\",\n            \"nationality\": \"301\",\n            \"sex\": \"M\",\n            \"designation\": 4,\n            \"dateOfBirth\": 19850521,\n            \"grossCommission\": 346\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/CommissionCP/submit",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"CommissionCP",
+						"submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "o\thttps://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&callback_url=https%3A%2F%2Fforms.smartsource.com.sg%2FSandboxIrasApi&state=test&tax_agent=false",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "594a56795c1661a5447e2044192ed3d3"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "ee71720edf813b64b5faedcb5d27ef10"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "o\thttps://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&callback_url=https%3A%2F%2Fforms.smartsource.com.sg%2FSandboxIrasApi&state=test&tax_agent=false",
+					"protocol": "o\thttps",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "DonationSub"
+						},
+						{
+							"key": "callback_url",
+							"value": "https%3A%2F%2Fforms.smartsource.com.sg%2FSandboxIrasApi"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&callback_url=https://forms.smartsource.com.sg/SandboxIrasApi&state=test&tax_agent=false",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apisandbox.iras.gov.sg/iras/sb/Authentication/CorpPassAuth?scope=DonationSub&callback_url=https://forms.smartsource.com.sg/SandboxIrasApi&state=test&tax_agent=false",
+					"protocol": "https",
+					"host": [
+						"apisandbox",
+						"iras",
+						"gov",
+						"sg"
+					],
+					"path": [
+						"iras",
+						"sb",
+						"Authentication",
+						"CorpPassAuth"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "DonationSub"
+						},
+						{
+							"key": "callback_url",
+							"value": "https://forms.smartsource.com.sg/SandboxIrasApi"
+						},
+						{
+							"key": "state",
+							"value": "test"
+						},
+						{
+							"key": "tax_agent",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
